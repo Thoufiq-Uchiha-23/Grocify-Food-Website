@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocify - Using TailWind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="background-color: black;" class="relative">
+    <div class="container min-h-screen w-full bg-[url('images/Image.png')] bg-center bg-cover py-28 py-5 relative">
+        <nav class="flex items-center z-50 justify-around flex h-16 px-5 hover:bg-green-400 hover:bg-opacity-50 top-0 fixed w-full">
+            <img src="images/logo.png" alt="" width="50" class="w-40 cursor-pointer shrink">
+            <ul class="flex justify-between text-center flex-2">
+                <li class="list-none inline-block px-5 md:block hidden"><a href="#" class="no-underline text-white">Home</a></li>
+                <li class="list-none inline-block px-5 md:block hidden"><a href="#" class="no-underline text-white">About</a></li>
+                <li class="list-none inline-block px-5 md:block hidden"><a href="#" class="no-underline text-white">Features</a></li>
+                <li class="list-none inline-block px-5 md:block hidden"><a href="#" class="no-underline text-white">Contact</a></li>
+                <li class="w-10 md:hidden justify-self-center shrink">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="40" viewBox="0,0,256,256">
+                        <g fill-opacity="0.96863" fill="#100b0b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill="#f4ebeb" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M24.96094,2.10156c-0.20852,0.00805 -0.4093,0.08112 -0.57422,0.20898l-23,17.90039c-0.29773,0.21363 -0.45479,0.57298 -0.40934,0.93659c0.04544,0.36361 0.28611,0.67326 0.62726,0.80704c0.34115,0.13378 0.72815,0.07028 1.00865,-0.16551l1.38672,-1.08008v27.29102c0.00006,0.55226 0.44774,0.99994 1,1h13.83203c0.10799,0.01785 0.21818,0.01785 0.32617,0h11.67383c0.10799,0.01785 0.21818,0.01785 0.32617,0h13.8418c0.55226,-0.00006 0.99994,-0.44774 1,-1v-27.29102l1.38672,1.08008c0.2805,0.23579 0.6675,0.2993 1.00865,0.16551c0.34115,-0.13378 0.58181,-0.44343 0.62726,-0.80704c0.04544,-0.36362 -0.11161,-0.72297 -0.40935,-0.93659l-23,-17.90039c-0.18607,-0.14428 -0.41707,-0.21828 -0.65234,-0.20898zM25,4.36719l19,14.78711v27.8457h-12v-18c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1h-12c-0.55226,0.00006 -0.99994,0.44774 -1,1v18h-12v-27.8457zM20,30h10v17h-10z"></path></g></g>
+                        </svg>
+                </li>
+            </ul>
+            <img src="images/cart.png" width="20" alt="" class="w-8 cursor-pointer shrink">
+        </nav>
+        <main class="px-20 md:px-24 flex flex-wrap">
+            <div class="text-white pt-20 max-w-sm md:w-1/2">
+                <h1 class="text-5xl md:text-6xl font-semibold md:leading-normal">
+                    Groceries <br>delivery in <span class="font-light">15 mins</span>
+                </h1>
+                <p>Grocify offer a wide range of products,including fresh products, meats,dairy, baked goods and non-perishable items.</p>
+                <div class="mt-10 flex flex-wrap gap-3 justify-start items-center w-full">
+                    <a href="#" class="bg-yellow-300 rounded-3xl px-5 py-3 font-medium md:inline-block mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border border-transparent">Order Now</a>
+                    <a href="#">Download App <span class="text-lg inline-block rotate-90">&#10148</span></a>
+                </div>
+            </div>
+            <img src="images/grocery-image.png" alt="" class="w-full h-auto md:w-1/2 md:absolute gap-5 top-20 right-0">
+        </main>
+
+        <footer class="h-auto w-full bg-green-400 bottom-0 absolute px-10 py-7 flex items-center justify-center flex-wrap gap-4">
+            <div class="flex-1">
+                <h1>For more Details Contact us via Social Media</h1>
+            </div>
+            <div class="flex-1">
+                <ul class="flex justify-between gap-3 flex-wrap" >
+                    <li class="w-10 h-auto">
+                        <img
+                            src="icons/whatsapp logo.svg"
+                            alt="whatsapp"
+                            class="whatsapp-logo"
+                          />
+                    </li>
+                    <li class="w-10 h-auto">
+                        <img
+                            src="icons/instagram logo.svg"
+                            alt="instagram"
+                            class="instagram-logo"
+                          />
+                    </li>
+                    <li class="w-10 h-auto">
+                        <img
+                            src="icons/facebook logo.svg"
+                            alt="facebook"
+                            class="facebook-logo"
+                          />
+                    </li>
+                    <li class="w-10 h-auto">
+                        <img src="icons/twitter logo.svg" alt="twitter" class="twitter-logo"/>
+                    </li>    
+                </ul>
+            </div>
+        </footer>
+        <div class="min-h-screen"></div>
+        
+        
+        
+    </div>
+</body>
+</html>
